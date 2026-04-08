@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15
+    container_name: demo-db
+    environment:
+      POSTGRES_DB: testdb
+      POSTGRES_USER: testuser
+      POSTGRES_PASSWORD: testpass
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U testuser -d testdb"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  user-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.user-api
+    container_name: user-api
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  tests:
+    image: eclipse-temurin:21-jdk-jammy
+    container_name: bank-demo-tests
+    working_dir: /app
+    volumes:
+      - ./:/app
+    depends_on:
+      user-api:
+        condition: service_started
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: testdb
+      DB_USER: testuser
+      DB_PASSWORD: testpass
+      API_BASE_URL: http://user-api:8080
+    command: ["bash", "-c", "mvn -pl practice-project test"]
