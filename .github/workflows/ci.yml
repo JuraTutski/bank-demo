@@ -4,7 +4,7 @@ on:
   push:
     branches: ["main"]
   pull_request:
-      branches: ["main"]
+    branches: ["main"]
 
 jobs:
   build:
@@ -13,6 +13,21 @@ jobs:
     strategy:
       matrix:
         java-version: ['17', '21']
+
+    services:
+      postgres:
+        image: postgres:16
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_DB: testdb
+          POSTGRES_USER: testuser
+          POSTGRES_PASSWORD: testpass
+        options: >-
+          --health-cmd="pg_isready -U testuser -d testdb"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
 
     steps:
       - name: Checkout
@@ -23,6 +38,32 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: ${{ matrix.java-version }}
+          cache: 'maven'
 
-      - name: Build and test
-        run: mvn -B clean test
+      - name: Wait for Postgres
+        run: |
+          for i in {1..30}; do
+            if pg_isready -h localhost -p 5432 -U testuser; then
+              echo "Postgres is up"
+              break
+            fi 
+            echo "Waiting for Postgres..."
+            sleep 2
+          done
+
+      - name: Build user-api
+        run: mvn -B -pl user-api -am clean package
+
+      - name: Start user-api
+        run: |
+          nohup java -jar user-api/target/user-api-0.0.1-SNAPSHOT.jar > user-api.log 2>&1 &
+          sleep 30
+
+      - name: Run practice-project tests
+        env:
+          DB_HOST: localhost
+          DB_PORT: 5432
+          DB_NAME: testdb
+          DB_USER: testuser
+          DB_PASSWORD: testpass
+        run: mvn -B -pl practice-project -am test
