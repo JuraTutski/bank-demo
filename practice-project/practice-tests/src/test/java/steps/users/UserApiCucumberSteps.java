@@ -1,4 +1,4 @@
-package steps;
+package steps.users;
 
 import base.BaseDbTest;
 import io.cucumber.java.After;
@@ -6,6 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import models.UserResponse;
+import steps.UserApiSteps;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
