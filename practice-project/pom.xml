@@ -12,6 +12,7 @@
 
     <modules>
         <module>practice-tests</module>
+        <module>payments-service</module>
         <!-- потом добавим payments-service -->
     </modules>
 

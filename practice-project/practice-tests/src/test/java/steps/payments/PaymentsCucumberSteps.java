@@ -7,6 +7,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -32,8 +37,29 @@ public class PaymentsCucumberSteps {
     // Сценарий SUCCESS
     @When("клиент в ДБО отправляет платёж по реквизитам на сумму {int} рублей")
     public void sendPaymentByDetails(int amount) throws Exception {
-        // имитация успешного платежа: сразу пишем запись в БД
-        paymentsDbClient.insertTestPayment(amount, "SUCCESS");
+        String body = """
+                {
+                 "clientId": "test-client",
+                 "amount": %d
+                }
+                """.formatted(amount);
+        HttpClient client = HttpClient.newHttpClient();
+
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create("http://localhost:8080/payments"))
+                .header("Content-Type", "application/json")
+                .POST(HttpRequest.BodyPublishers.ofString(body))
+                .build();
+
+        HttpResponse<String> response = client.send(request,
+                HttpResponse.BodyHandlers.ofString());
+
+        if (response.statusCode()!=200){
+            throw new IllegalStateException("Payment service returned status " + response.statusCode()
+            + "body: " + response.body());
+        }
+//        // имитация успешного платежа: сразу пишем запись в БД
+//        paymentsDbClient.insertTestPayment(amount, "SUCCESS");
     }
 
     // Сценарий DECLINED_LIMIT

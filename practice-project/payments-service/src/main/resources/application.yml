@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/payments_db
+    username: test_user
+    password: test_password
+  jpa:
+    hibernate:
+      ddl-auto: none
+      show-sql: true
+      properties:
+        hibernate:
+        format_sql: true
+
+server:
+  port: 8080

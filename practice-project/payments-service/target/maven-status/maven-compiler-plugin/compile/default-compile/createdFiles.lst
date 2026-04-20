@@ -1,0 +1,5 @@
+org\example\payments\PaymentsServiceApplication.class
+org\example\payments\repository\PaymentRepository.class
+org\example\payments\api\PaymentController.class
+org\example\payments\model\Payment.class
+org\example\payments\api\PaymentRequest.class

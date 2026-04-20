@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="io.cucumber.junit.platform.engine.CucumberTestEngine" time="2.18" tests="3" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\Lenovo\IdeaProjects\bank-demo\practice-project\practice-tests\target\test-classes;C:\Users\Lenovo\IdeaProjects\bank-demo\practice-project\practice-tests\target\classes;C:\Users\Lenovo\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Lenovo\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Lenovo\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Lenovo\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Lenovo\.m2\repository\org\postgresql\postgresql\42.7.8\postgresql-42.7.8.jar;C:\Users\Lenovo\.m2\repository\org\checkerframework\checker-qual\3.49.5\checker-qual-3.49.5.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\Lenovo\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.3\log4j-core-2.25.3.jar;C:\Users\Lenovo\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.3\log4j-api-2.25.3.jar;C:\Users\Lenovo\.m2\repository\org\projectlombok\lombok\1.18.42\lombok-1.18.42.jar;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Lenovo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-java\7.18.1\cucumber-java-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-core\7.18.1\cucumber-core-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin\7.18.1\cucumber-gherkin-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.1\cucumber-gherkin-messages-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\testng-xml-formatter\0.2.0\testng-xml-formatter-0.2.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\datatable\7.18.1\datatable-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-plugin\7.18.1\cucumber-plugin-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\docstring\7.18.1\docstring-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\html-formatter\21.4.1\html-formatter-21.4.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\junit-xml-formatter\0.5.0\junit-xml-formatter-0.5.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.18.1\cucumber-junit-platform-engine-7.18.1.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\Lenovo\.m2\repository\org\apache\kafka\kafka-clients\3.7.0\kafka-clients-3.7.0.jar;C:\Users\Lenovo\.m2\repository\com\github\luben\zstd-jni\1.5.5-6\zstd-jni-1.5.5-6.jar;C:\Users\Lenovo\.m2\repository\org\lz4\lz4-java\1.8.0\lz4-java-1.8.0.jar;C:\Users\Lenovo\.m2\repository\org\xerial\snappy\snappy-java\1.1.10.5\snappy-java-1.1.10.5.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Lenovo\AppData\Local\Temp\surefire6744589349366316811\surefirebooter-20260420115702500_3.jar C:\Users\Lenovo\AppData\Local\Temp\surefire6744589349366316811 2026-04-20T11-57-02_392-jvmRun1 surefire-20260420115702500_1tmp surefire_0-20260420115702500_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Lenovo\IdeaProjects\bank-demo\practice-project\practice-tests\target\test-classes;C:\Users\Lenovo\IdeaProjects\bank-demo\practice-project\practice-tests\target\classes;C:\Users\Lenovo\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Lenovo\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Lenovo\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Lenovo\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Lenovo\.m2\repository\org\postgresql\postgresql\42.7.8\postgresql-42.7.8.jar;C:\Users\Lenovo\.m2\repository\org\checkerframework\checker-qual\3.49.5\checker-qual-3.49.5.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\Lenovo\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.3\log4j-core-2.25.3.jar;C:\Users\Lenovo\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.3\log4j-api-2.25.3.jar;C:\Users\Lenovo\.m2\repository\org\projectlombok\lombok\1.18.42\lombok-1.18.42.jar;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Lenovo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-java\7.18.1\cucumber-java-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-core\7.18.1\cucumber-core-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin\7.18.1\cucumber-gherkin-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.1\cucumber-gherkin-messages-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\testng-xml-formatter\0.2.0\testng-xml-formatter-0.2.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\datatable\7.18.1\datatable-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-plugin\7.18.1\cucumber-plugin-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\docstring\7.18.1\docstring-7.18.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\html-formatter\21.4.1\html-formatter-21.4.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\junit-xml-formatter\0.5.0\junit-xml-formatter-0.5.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.18.1\cucumber-junit-platform-engine-7.18.1.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\Lenovo\.m2\repository\org\apache\kafka\kafka-clients\3.7.0\kafka-clients-3.7.0.jar;C:\Users\Lenovo\.m2\repository\com\github\luben\zstd-jni\1.5.5-6\zstd-jni-1.5.5-6.jar;C:\Users\Lenovo\.m2\repository\org\lz4\lz4-java\1.8.0\lz4-java-1.8.0.jar;C:\Users\Lenovo\.m2\repository\org\xerial\snappy\snappy-java\1.1.10.5\snappy-java-1.1.10.5.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Lenovo"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Lenovo\IdeaProjects\bank-demo\practice-project\practice-tests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Lenovo\AppData\Local\Temp\surefire6744589349366316811\surefirebooter-20260420115702500_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.9+10-LTS"/>
+    <property name="user.name" value="Lenovo"/>
+    <property name="stdout.encoding" value="Cp1251"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.9+10"/>
+    <property name="localRepository" value="C:\Users\Lenovo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\Lenovo\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.9"/>
+    <property name="user.dir" value="C:\Users\Lenovo\IdeaProjects\bank-demo\practice-project\practice-tests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Lenovo\scoop\apps\maven\current\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin;C:\Users\Lenovo\scoop\shims;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\Lenovo\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.9+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="Успешный платёж по реквизитам" classname="Проведение платежей по реквизитам" time="2.038">
+    <system-out><![CDATA[
+@db @rest @kafka @success
+Scenario: Успешный платёж по реквизитам                                        &amp#27;[90m# src/test/resources/features/payments.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mв системе есть клиент с активным счётом и достаточным остатком&amp#27;[0m         &amp#27;[90m# steps.payments.PaymentsCucumberSteps.existingCustomerWithActiveAccount()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mу клиента на счёте достаточно средств для платежа на сумму &amp#27;[0m&amp#27;[32m&amp#27;[1m1000&amp#27;[0m&amp#27;[32m рублей&amp#27;[0m &amp#27;[90m# steps.payments.PaymentsCucumberSteps.clientHasEnoughBalance(int)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mклиент в ДБО отправляет платёж по реквизитам на сумму &amp#27;[0m&amp#27;[32m&amp#27;[1m1000&amp#27;[0m&amp#27;[32m рублей&amp#27;[0m       &amp#27;[90m# steps.payments.PaymentsCucumberSteps.sendPaymentByDetails(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mсервис платежей по REST вызывает сервис счетов для списания средств&amp#27;[0m     &amp#27;[90m# steps.payments.PaymentsCucumberSteps.paymentServiceCallsAccountsServiceForDebit()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mсервис платежей публикует событие о платеже в Kafka&amp#27;[0m                      &amp#27;[90m# steps.payments.PaymentsCucumberSteps.paymentServicePublishesKafkaEvent()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mсервис уведомлений получает событие из Kafka и формирует уведомление&amp#27;[0m     &amp#27;[90m# steps.payments.PaymentsCucumberSteps.notificationServiceProcessesKafkaEvent()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mв PostgreSQL создаётся запись о проведённом платеже со статуса &amp#27;[0m&amp#27;[32m&amp#27;[1m"SUCCESS"&amp#27;[0m &amp#27;[90m# steps.payments.PaymentsCucumberSteps.verifySuccessfulPaymentStatusInDb(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mв PostgreSQL остаток по счёту плательщика уменьшается на &amp#27;[0m&amp#27;[32m&amp#27;[1m1000&amp#27;[0m&amp#27;[32m рублей&amp#27;[0m     &amp#27;[90m# steps.payments.PaymentsCucumberSteps.verifyPayerBalanceDecreased(int)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[апр. 20, 2026 11:57:02 AM io.cucumber.junit.platform.engine.DiscoverySelectorResolver warnWhenCucumberFeaturesPropertyIsUsed
+WARNING: Discovering tests using the cucumber.features property. Other discovery selectors are ignored!
+
+This is a work around for the limited JUnit 5 support in Maven and Gradle. Please request/upvote/sponsor/ect better support for JUnit 5 discovery selectors. For details see: https://github.com/cucumber/cucumber-jvm/pull/2498
+
+If you are using the JUnit 5 Suite Engine, Platform Launcher API or Console Launcher you should not use this property. Please consult the JUnit 5 documentation on test selection.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="Платёж отклонён по дневному лимиту" classname="Проведение платежей по реквизитам" time="0.052">
+    <system-out><![CDATA[
+@db @rest @limits @limit_exceeded
+Scenario: Платёж отклонён по дневному лимиту                                                       &amp#27;[90m# src/test/resources/features/payments.feature:22&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mв системе есть клиент с активным счётом и достаточным остатком&amp#27;[0m                             &amp#27;[90m# steps.payments.PaymentsCucumberSteps.existingCustomerWithActiveAccount()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mу клиента установлен дневной лимит на платежи в размере &amp#27;[0m&amp#27;[32m&amp#27;[1m5000&amp#27;[0m&amp#27;[32m рублей&amp#27;[0m                        &amp#27;[90m# steps.payments.PaymentsCucumberSteps.setDailyLimit(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mпо текущему дню клиент уже выполнил платежи на сумму &amp#27;[0m&amp#27;[32m&amp#27;[1m4500&amp#27;[0m&amp#27;[32m рублей&amp#27;[0m                             &amp#27;[90m# steps.payments.PaymentsCucumberSteps.setAlreadySpentAmount(int)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mклиент в ДБО пытается отправить платёж по реквизитам на сумму &amp#27;[0m&amp#27;[32m&amp#27;[1m1000&amp#27;[0m&amp#27;[32m рублей&amp#27;[0m                   &amp#27;[90m# steps.payments.PaymentsCucumberSteps.tryToSendPaymentByDetailsWithLimit(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mсервис платежей по REST получает от сервиса лимитов отказ с причиной &amp#27;[0m&amp#27;[32m&amp#27;[1m"DAILY_LIMIT_EXCEEDED"&amp#27;[0m &amp#27;[90m# steps.payments.PaymentsCucumberSteps.verifyLimitServiceReason(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mсервис платежей возвращает в ДБО ошибку &amp#27;[0m&amp#27;[32m&amp#27;[1m"Превышен дневной лимит по платежам"&amp#27;[0m                 &amp#27;[90m# steps.payments.PaymentsCucumberSteps.verifyErrorReturnedToDbo(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mв PostgreSQL создаётся запись о платеже со статусом &amp#27;[0m&amp#27;[32m&amp#27;[1m"DECLINED_LIMIT"&amp#27;[0m                         &amp#27;[90m# steps.payments.PaymentsCucumberSteps.verifyDeclinedPaymentStatusInDb(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mв PostgreSQL остаток по счёту клиента не изменяется&amp#27;[0m                                          &amp#27;[90m# steps.payments.PaymentsCucumberSteps.verifyCustomerBalanceNotChanged()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Успешное получение пользователя по id" classname="Получение пользователя по id" time="0.0">
+    <skipped message="&apos;cucumber.filter.tags=@db&apos; did not match this scenario"/>
+  </testcase>
+</testsuite>

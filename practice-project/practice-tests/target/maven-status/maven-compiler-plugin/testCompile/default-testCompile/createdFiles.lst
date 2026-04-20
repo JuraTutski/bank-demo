@@ -1,0 +1,11 @@
+steps\users\UserApiCucumberSteps.class
+base\DatabaseSmokeTest.class
+steps\payments\PaymentsCucumberSteps.class
+models\UserResponse.class
+runners\UsersCucumberTest.class
+test\UserApiTest.class
+base\KafkaTestClient.class
+base\PaymentsDbClient.class
+runners\PaymentsCucumberTest.class
+steps\UserApiSteps.class
+base\BaseDbTest.class
